@@ -1,0 +1,101 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f7f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 480px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.tax-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.tax-form input,
+.tax-form select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.tax-form button {
+  background: #007AA3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.tax-form button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+.tax-form button:hover:not(:disabled) {
+  background: #005f7a;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.loader {
+  margin: 16px 0;
+  text-align: center;
+  color: #007AA3;
+  font-weight: 500;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 16px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  border: 1px solid #90caf9;
+}
+
+.tax-band-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.tax-band-table th, .tax-band-table td {
+  border: 1px solid #cfd8dc;
+  padding: 8px;
+  text-align: right;
+}
+
+.tax-band-table th {
+  background: #f1f8e9;
+  font-weight: 600;
+} 
