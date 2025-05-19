@@ -7,6 +7,23 @@ This is the frontend application for the tax calculator. It is built using:
 *   Vite
 *   Plain CSS
 
+## Backend Requirement
+
+For the frontend to work, you must have the backend API running locally.
+
+To start the backend:
+
+```sh
+docker pull ptsdocker16/interview-test-server
+docker run --init -p 5001:5001 -it ptsdocker16/interview-test-server
+```
+
+Once running, the API will be available at [http://localhost:5001](http://localhost:5001), with key endpoints:
+- `/tax-calculator/` — main development endpoint
+- `/tax-calculator/tax-year/2022` — assessment endpoint
+
+If you have any issues, contact the engineering hiring manager for assistance.
+
 ## Getting Started
 
 To get the frontend running locally, follow these steps:
@@ -39,7 +56,7 @@ npm test
 
 ## API Interaction
 
-This frontend interacts with the backend tax calculator API, specifically the `/tax-calculator/tax-year/:year` endpoint, to fetch tax bracket information. Ensure the backend server is running and accessible.
+This frontend interacts with the backend tax calculator API, specifically the `/tax-calculator/tax-year/:year` endpoint, to fetch tax bracket information.
 
 ## Project Structure
 
